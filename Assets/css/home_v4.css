@@ -1,0 +1,78 @@
+/* sofa setction */
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    border-radius: 10px;
+}
+.btn-primary {
+    background-color: orange !important;
+    color: black !important;
+}
+.photo-1{
+    position: relative;
+}
+h5.card-title.text-1 {
+    bottom: 69%;
+    position: absolute;
+    left: 19px;
+    font-size: 22px;
+}
+p.card-text.text-2 {
+    position: absolute;
+    bottom: 36%;
+    left: 19px;
+}
+a.btn.btn-warning.btn-1 {
+    background-color: orange;
+    color: black;
+    position: absolute;
+    border-top-right-radius: 16px;
+    bottom: -1px;
+    /* background: transparent; */
+}
+a.btn.btn-warning.btn-1:hover{
+    background-color: black;
+    color: white;
+}
+h5.card-title.text-3 {
+    position: absolute;
+    bottom: 63%;
+    left: 19px;
+    font-size: 22px;
+}
+p.card-text.text-4 {
+    position: absolute;
+    bottom: 48%;
+    left: 19px;
+}
+a.btn.btn-warning.btn-2 {
+    position: absolute;
+    color: black;
+    background-color: orange;
+    bottom: 1px;
+    border-top-right-radius: 16px;
+}
+a.btn.btn-warning.btn-2:hover{
+    background-color: black;
+    color: white;
+
+}
+/* sofa section */
+
+/* chair section */
+/* .item img:hover{
+} */
+/* .item{
+    cursor: pointer;
+    overflow: hidden;
+    height: auto;
+} */
+.item:hover img.card-img-top.rounded {
+    transform: scale(1.1);
+    transition: all 0.9s ease-in-out;
+    border-radius: 10px;
+  }
+  .inner-item{
+    overflow: hidden;
+    border-radius: 10px;
+  }
