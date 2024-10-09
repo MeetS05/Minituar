@@ -29,7 +29,17 @@ a.btn.btn-warning.btn-1 {
   border-top-right-radius: 16px;
   bottom: -1px;
   /* background: transparent; */
+  border: 1px solid transparent;
 }
+/*  */
+.card-images{
+  overflow: hidden;
+}
+img.card-img-top.rounded:hover,img.img-fluid.rounded:hover,img.img-fluid.rounded:hover{
+  transform: scale(1.1);
+  transition: all 0.9s ease-in-out;
+}
+/*  */
 a.btn.btn-warning.btn-1:hover {
   background-color: black;
   color: white;
@@ -51,6 +61,7 @@ a.btn.btn-warning.btn-2 {
   background-color: orange;
   bottom: 1px;
   border-top-right-radius: 16px;
+  border: 1px solid transparent;
 }
 a.btn.btn-warning.btn-2:hover {
   background-color: black;
