@@ -22,25 +22,80 @@ p.card-text.text-2 {
   bottom: 36%;
   left: 19px;
 }
+
 a.btn.btn-warning.btn-1 {
   background-color: orange;
-  color: black;
+  color: #fff;
+  border: 16px solid white;
   position: absolute;
-  border-top-right-radius: 16px;
-  bottom: -1px;
-  /* background: transparent; */
-  border: 1px solid transparent;
+  bottom: -17px;
+  left: -20px;
 }
+a.btn.btn-danger.btn-1 {
+  background-color: orange;
+  color: #fff;
+  border: 16px solid white;
+  position: absolute;
+  bottom: -17px;
+  left: -10px;
+}
+a.btn.btn-danger.btn-1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/home_v4_img/download.svg");
+  top: -34px;
+  left: 4px;
+}
+a.btn.btn-danger.btn-1::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/home_v4_img/download.svg");
+  background-repeat: no-repeat;
+  right: -32px;
+  color: #f28e03;
+  bottom: 1px;
+}
+a.btn.btn-warning.btn-1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/home_v4_img/download.svg");
+  top: -34px;
+  left: 4px;
+}
+a.btn.btn-warning.btn-1::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/home_v4_img/download.svg");
+  background-repeat: no-repeat;
+  right: -32px;
+  color: #f28e03;
+  bottom: 1px;
+}
+
 /*  */
-.card-images{
+.card-images {
   overflow: hidden;
 }
-img.card-img-top.rounded:hover,img.img-fluid.rounded:hover,img.img-fluid.rounded:hover{
+img.card-img-top.rounded:hover,
+img.img-fluid.rounded:hover,
+img.img-fluid.rounded:hover {
   transform: scale(1.1);
   transition: all 0.9s ease-in-out;
 }
 /*  */
 a.btn.btn-warning.btn-1:hover {
+  background-color: black;
+  color: white;
+}
+a.btn.btn-danger.btn-1:hover {
   background-color: black;
   color: white;
 }
@@ -59,9 +114,10 @@ a.btn.btn-warning.btn-2 {
   position: absolute;
   color: black;
   background-color: orange;
-  bottom: 1px;
+  bottom: 0px;
   border-top-right-radius: 16px;
-  border: 1px solid transparent;
+  border: 15px solid white;
+  left: 0;
 }
 a.btn.btn-warning.btn-2:hover {
   background-color: black;
@@ -70,7 +126,7 @@ a.btn.btn-warning.btn-2:hover {
 /* sofa section */
 
 /* chair section */
-.item:hover img.card-img-top.rounded {
+.item:hover img.card-img-top {
   transform: scale(1.1);
   transition: all 0.9s ease-in-out;
   border-radius: 10px;
@@ -124,17 +180,17 @@ i.fa-solid.fa-magnifying-glass.btn-2 {
   height: 150px; /* Adjust as needed */
 }
 button.prev.rounded-circle {
-    position: absolute;
-    top: 62px;
-    width: 35px;
-    height: 35px;
-    left: -22px;
-    z-index: 11;
-    background-color: #ffffff;
-    color: #000;
-    border: none;
-    border-radius: 50px 50px 50px 50px;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.09);
+  position: absolute;
+  top: 62px;
+  width: 35px;
+  height: 35px;
+  left: -22px;
+  z-index: 11;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.09);
 }
 button.next.rounded-circle {
   position: absolute;
@@ -149,32 +205,32 @@ button.next.rounded-circle {
   border-radius: 50px 50px 50px 50px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.09);
 }
-button.prev.rounded-circle:hover,button.next.rounded-circle:hover{
-    background-color: orange;
-    color: #ffffff;
+button.prev.rounded-circle:hover,
+button.next.rounded-circle:hover {
+  background-color: orange;
+  color: #ffffff;
 }
 .item-1:hover .item .text-center .item-inner-1 {
-    transform: scale(1.1);
-    transition: all 0.9s ease-in-out;
-    border-radius: 10px;
+  transform: scale(1.1);
+  transition: all 0.9s ease-in-out;
+  border-radius: 10px;
 }
 
 .hover-img {
-    border-radius: 50%;
-    overflow: hidden;
-
+  border-radius: 50%;
+  overflow: hidden;
 }
 .item.text-center:hover img.categories-image {
-    transform: scale(1.1);
-    transition: all 0.9s ease-in-out;
-  }
-  .btn.btn-3 {
-    border: 1px solid;
-    border-radius: 27px;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    border-color: rgb(170, 167, 167);
+  transform: scale(1.1);
+  transition: all 0.9s ease-in-out;
+}
+.btn.btn-3 {
+  border: 1px solid;
+  border-radius: 27px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  border-color: rgb(170, 167, 167);
 }
 .btn.btn-3:hover {
   background-color: orange;
@@ -184,7 +240,7 @@ button.prev.rounded-circle:hover,button.next.rounded-circle:hover{
 /*shope categari */
 
 /* service section */
-.inner-item-1>img {
+.inner-item-1 > img {
   width: 66px;
   height: 66px;
   border: 1px solid black;
@@ -192,7 +248,35 @@ button.prev.rounded-circle:hover,button.next.rounded-circle:hover{
   padding: 10px;
   border-color: rgb(170, 167, 167);
 }
-.inner-item-name{
-text-align: left;
+.inner-item-name {
+  text-align: left;
 }
+
 /* service section  */
+
+/* shope section */
+.main {
+  position: relative;
+  left: 8px;
+  /* top: -375px; */
+  bottom: 390px;
+}
+.main .h5{
+    order: 1;
+    justify-content: flex-start;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    padding: 0px 0px 10px 0px;
+    margin: 0% 38% 0% 0%;
+}
+button.btn-4.rounded {
+  color: white;
+  background-color: orange;
+  border: 1px solid transparent;
+  position: relative;
+  bottom: 147px;
+  left: 225px;
+}
+/* shope section */
+
