@@ -210,6 +210,7 @@
     <!-- </div> -->
 
     <!-- slider img -->
+
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -220,18 +221,18 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner conatinet">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="Assets/image/home_v4_img/banner-2.jpg" class="d-block w-100" alt="..."
-                        style="height: 650px;">
+                        style="height: 650px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
                     <img src="Assets/image/home_v4_img/banner-5.jpg" class="d-block w-100" alt="..."
-                        style="height: 650px;">
+                        style="height: 650px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
                     <img src="Assets/image/home_v4_img/banner-3.avif" class="d-block w-100" alt="..."
-                        style="height: 650px;">
+                        style="height: 650px; object-fit: cover;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -247,12 +248,20 @@
         </div>
     </div>
 
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+
+
     <!-- slider img -->
 
     <!-- sofa section -->
     <div class="container">
         <div class="row mt-4  ">
-            <!-- Column for Vertical Arrangement -->
             <div class="col-md-6  border-border-0">
                 <div class=" bg-light mb-3  photo-1">
                     <div class="card-images rounded">
@@ -489,7 +498,6 @@
         </div>
     </div>
     </div>
-
     <!-- part 2 -->
     <div class="container ">
         <div class="row">
@@ -582,158 +590,34 @@
     <!-- service section -->
 
     <!-- shope section -->
-    <!-- <div class="container">
-        <h2 class="text-center pt-4 pb-5">Shop by Categories</h2>
-        <div class="categories position-relative item-1">
-            <div class="owl-carousel ">
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"> <img src="Assets/image/home_v3_img/p1.jpg" alt="Espresso Makers"
-                            class="categories-image"></div>
-                    <h5>Espresso Makers</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p2.jpg" alt="Table Lamps"
-                            class="categories-image"></div>
-                    <h5>Table Lamps</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p3.jpg" alt="Scented Candles"
-                            class="categories-image"></div>
-                    <h5>Scented Candles</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p4.jpeg" alt="Filing Cabinets"
-                            class="categories-image"></div>
-                    <h5>Filing Cabinets</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p2.jpg" alt="Table Lamps"
-                            class="categories-image"></div>
-                    <h5>Table Lamps</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p6.jpg" alt="Duvet Covers"
-                            class="categories-image"></div>
-                    <h5>Duvet Covers</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p7.jpg" alt="Accent Chairs"
-                            class="categories-image"></div>
-                    <h5>Accent Chairs</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p1.jpg" alt="Espresso Makers"
-                            class="categories-image"></div>
-                    <h5>Espresso Makers</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"><img src="Assets/image/home_v3_img/p6.jpg" alt="Duvet Covers"
-                            class="categories-image "></div>
-                    <h5>Duvet Covers</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"> <img src="Assets/image/home_v3_img/p7.jpg" alt="Accent Chairs"
-                            class="categories-image "></div>
-                    <h5>Accent Chairs</h5>
-                </div>
-                <div class="item text-center item-inner-1">
-                    <div class="hover-img"> <img src="Assets/image/home_v3_img/p1.jpg" alt="Espresso Makers"
-                            class="categories-image "></div>
-                    <h5>Espresso Makers</h5>
+    
+    <div class="container">
+        <div class="title">
+            <p class="red_title">Our Affordable</p>
+            <h2 class="blue_sub_title">Health Checkup</h2>
+            <p class="small_gray_text text-center">Plans For Your Good Health</p>
+        </div>
+        <div class="carousel-container">
+            <div class="container">
+                <div class="loop owl-carousel">
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo1.png" alt="" style="width: 270px; margin-right: 1px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo2.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo3.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo4.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo5.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
                 </div>
             </div>
-            <div class="custom-nav">
-                <button class="prev rounded-circle"><i class="bi bi-arrow-left "></i></button>
-                <button class="next rounded-circle"><i class="bi bi-arrow-right "></i></button>
+            <div class="nav-buttons">
+                <button id="loopPrev" class="rounded-circle"><i class="fas fa-arrow-left"></i></button>
+                <button id="loopNext" class="rounded-circle"><i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
-    shope categari
-    jQuery
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    Owl Carousel JS
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var owl = $(".owl-carousel").owlCarousel({
-                items: 4,
-                loop: false,
-                margin: 10,
-                autoplay: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 4
-                    }
-                }
-            });
-            Custom navigation buttons
-            $(".next").click(function () {
-                owl.trigger('next.owl.carousel');
-            });
-            $(".prev").click(function () {
-                owl.trigger('prev.owl.carousel', [300]);
-            });
-        });
-    </script> -->
-    <!-- all section end -->
-      <!-- <div class="title">
-        <p class="red_title">Our Affordable</p>
-        <h2 class="blue_sub_title">Health Checkup </h2>
 
-
-        <p class="small_gray_text text-center">Plans For Your Good Health
-        </p>
-    </div>
-    <div class="carousel-container">
-        <div class="container">
-            <div class="loop owl-carousel">
-                <div class="item "><img src="../minituar/Assets/image/home_v4_img/logo1.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo2.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo3.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo4.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo5.png" alt=""></div>
-            </div>
-
-        </div>
-        <div class="nav-buttons">
-            <button id="loopPrev"><i class="fas fa-arrow-left"></i></button>
-            <button id="loopNext"><i class="fas fa-arrow-right"></i></button>
-        </div>
-
-    </div> -->
-    <div class="title">
-        <p class="red_title">Our Affordable</p>
-        <h2 class="blue_sub_title">Health Checkup </h2>
-        <p class="small_gray_text text-center">Plans For Your Good Health
-        </p>
-    </div>
-    <div class="carousel-container">
-        <div class="container">
-            <div class="loop owl-carousel">
-                <div class="item "><img src="../minituar/Assets/image/home_v4_img/logo1.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo2.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo3.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo4.png" alt=""></div>
-                <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo5.png" alt=""></div>
-            </div>
-
-        </div>
-        <div class="nav-buttons">
-            <button id="loopPrev"><i class="fas fa-arrow-left"></i></button>
-            <button id="loopNext"><i class="fas fa-arrow-right"></i></button>
-        </div>
-
-    </div>
     <script>
         const loopCarousel = $('.loop').owlCarousel({
             center: true,
-            items: 2, // Show one item per slide
+            items: 1, // Show one item per slide by default
             loop: true,
             margin: 8,
             responsive: {
@@ -758,50 +642,69 @@
             loopCarousel.trigger('next.owl.carousel');
         });
     </script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-    <!-- <script>
-        const loopCarousel = $('.loop').owlCarousel({
-            center: true,
-            items: 1, // Show one item per slide
-            loop: true,
-            margin: 10,
-            responsive: {
-                600: {
-                    items: 2 // Show two items per slide on wider screens
-                },
-                800: {
-                    items: 3 // Show three items per slide on even wider screens
-                },
-                1000: {
-                    items: 4 // Show four items per slide on very wide screens
-                }
-            }
-        });
-
-        // Navigation for loop carousel
-        $('#loopPrev').click(function () {
-            loopCarousel.trigger('prev.owl.carousel');
-        });
-
-        $('#loopNext').click(function () {
-            loopCarousel.trigger('next.owl.carousel');
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-
 
     <!-- email -->
     <div class="container">
         <hr>
-        <h2 class="t1" ><span>Get Exclusive Offers & Updates</span></h2>
+        <h2 class="t1"><span>Get Exclusive Offers & Updates</span></h2>
         <h5 class="t2"><span>Get recommendations, tips, updates, promotions and more.</span></h5>
         <form class="button">
-        <p><input type="email" name="email" placeholder="enter your email" class="mail"><button class="search">search</button></p>
+            <p><input type="email" name="email" placeholder="enter your email" class="mail"><button
+                    class="search">search</button></p>
         </form>
     </div>
     <!-- email -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-container">
+            <!-- store-info -->
+            <div class="footer-section ">
+                <h4>Our Store</h4>
+                <p>Miniture is one of the biggest international fashion companies, one of the world's largest
+                    distribution groups.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <!--  quick-links -->
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Product Compare</a></li>
+                </ul>
+            </div>
+            <!-- information -->
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping & Return</a></li>
+                    <li><a href="#">Term & conditions</a></li>
+                </ul>
+            </div>
+            <!-- contact-form -->
+            <div class="footer-section ">
+                <h4>Let's get in touch</h4>
+                <p>Sign up for our newsletter and receive 10% off your first order.</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email address..." class="email">
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Miniture All rights reserved. Designed by Novaworks</p>
+        </div>
+    </footer>
+    <!-- footer start -->
+
 
 </body>
 

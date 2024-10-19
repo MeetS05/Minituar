@@ -79,6 +79,38 @@ a.btn.btn-warning.btn-1::after {
   color: #f28e03;
   bottom: 1px;
 }
+@media (max-width: 768px) {
+  h5.card-title.text-1 {
+    font-size: 18px; 
+    bottom: 86%; 
+  }
+
+  p.card-text.text-2 {
+    bottom: 30%; 
+  }
+
+  a.btn.btn-warning.btn-1,
+  a.btn.btn-danger.btn-1 {
+    font-size: 14px;
+    padding: 10px; 
+  }
+}
+
+@media (max-width: 576px) {
+  h5.card-title.text-1 {
+    font-size: 16px; 
+  }
+
+  p.card-text.text-2 {
+    bottom: 57%; 
+  }
+
+  a.btn.btn-warning.btn-1,
+  a.btn.btn-danger.btn-1 {
+    bottom: -5px; 
+    left: -10px; 
+  }
+}
 
 /* sofa section*/
 .card-images {
@@ -184,7 +216,7 @@ button.prev.rounded-circle {
   top: 62px;
   width: 35px;
   height: 35px;
-  left: -22px;
+  left: 0px;
   z-index: 11;
   background-color: #ffffff;
   color: #000;
@@ -195,7 +227,7 @@ button.prev.rounded-circle {
 button.next.rounded-circle {
   position: absolute;
   top: 62px;
-  right: -22px;
+  right: 4px;
   width: 35px;
   height: 35px;
   z-index: 11;
@@ -235,8 +267,46 @@ button.next.rounded-circle:hover {
 .btn.btn-3:hover {
   background-color: orange;
   color: rgb(252, 250, 250);
+} 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .categories-image {
+    width: 120px; 
+    height: 120px;
+  }
+
+  button.prev.rounded-circle,
+  button.next.rounded-circle {
+    width: 30px; 
+    height: 30px;
+    top: 50px;
+  }
+
+  .btn.btn-3 {
+    font-size: 16px;
+    padding: 10px; 
+  }
 }
 
+@media (max-width: 576px) {
+  .categories-image {
+    width: 100px; 
+    height: 277px;
+  }
+
+  button.prev.rounded-circle, button.next.rounded-circle {
+    width: 41px;
+    height: 44px;
+    top: 126px;
+    font-size: 21px;
+}
+
+  .btn.btn-3 {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+}
 /*shope categari */
 
 /* service section */
@@ -405,21 +475,116 @@ a.btn.btn-danger.btn-7::after {
   bottom: 1px;
 }
 /* btn end */
-
+.title {
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+}
 /* shope section */
 
 
 /* all section start */
-.owl-carousel .item {
+/* .owl-carousel .item {
   text-align: center;
   padding: 10px;
 }
 
 .owl-carousel .inner-item {
   overflow: hidden;
+} */
+button#loopPrev {
+  /* left: -25px; */
+  position: relative;
+  bottom: 25px;
+  right: 40px;
+  font-size: 24px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color:white;
+}
+button#loopPrev:hover,
+button#loopNext:hover{
+  background-color: orange;
+
+}
+button#loopNext {
+  position: absolute;
+  position: relative;
+  bottom: 17px;
+  /* left: -1%; */
+  right: 4px;
+  border: 1px solid transparent;
+  background-color: #fefcfc;
+  border-radius: 30px;
+  font-size: 24px;
 }
 
 /* all section end */
+.carousel-container {
+  position: relative;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.red_title {
+  color:gray; 
+  font-size: 24px;
+}
+
+.blue_sub_title {
+  color: black; 
+  font-size: 48px;
+}
+
+.small_gray_text {
+  color: gray;
+  font-size: 24px;
+}
+
+.loop .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loop img {
+  max-width: 100%;
+  height: auto; /* Responsive images */
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-buttons button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: orange;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .nav-buttons button {
+      padding: 8px; /* Smaller buttons on small screens */
+  }
+}
 
 
 /* email */
@@ -438,7 +603,7 @@ h5.t2 {
   padding: 13px;
 }
 input.mail {
-  width: 38%;
+  width: 53%;
   /* margin: 11px; */
   padding: 16px 26px 17px 10px;
   border-radius: 34px;
@@ -459,29 +624,107 @@ button.search {
 button.search:hover{
   background-color: black;
 }
-/* .owl-stage {
-  width: 100% !important;
-}
-.owl-item.active {
-  width: 314px !important;
-}
-.owl-carousel .product-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; Center items within the product item
+@media (max-width: 768px) {
+  input.mail {
+    padding: 14px 22px;
+    width: 100%;
+  }
+
+  button.search {
+    font-size: 18px; 
+    padding: 8px 16px; 
+  }
 }
 
-.owl-carousel {
-  overflow: hidden; Hide overflow to prevent wrapping
-}
-.owl-carousel .product-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; Center items within the product item
-}
+@media (max-width: 576px) {
+  input.mail {
+    padding: 12px 20px;
+  }
 
-.owl-carousel {
-  overflow: hidden; Hide overflow to prevent wrapping
-} */
-
+  button.search {
+    font-size: 16px;
+    padding: 6px 12px; 
+    width: 40%;
+  }
+}
 /* email */
+
+
+/* footer strat */
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+  top: 57px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 24px;
+}
+.footer-section h4 {
+  font-size: 27px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.footer-section p,
+.footer-section ul {
+  margin: 0 0 15px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+  color:grey;
+}
+.social-icons a {
+  color: white;
+  font-size: 16px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 10px;
+}
+.social-icons a:hover {
+  color: rgb(252, 251, 251);
+  background-color:orange;
+  border-radius: 10px;
+}
+.contact-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  margin-right: 5px;
+  width: 100%;
+  border-radius: 7px;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #3d3d3d;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.email {
+  padding: 10px;
+  width: 100%;
+}
+/* footer end */
