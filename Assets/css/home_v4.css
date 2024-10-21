@@ -163,6 +163,11 @@ a.btn.btn-warning.btn-2:hover {
   transition: all 0.9s ease-in-out;
   border-radius: 10px;
 }
+.item-inner-4:hover img{
+  transform: scale(1.1);
+  transition: all 0.9s ease-in-out;
+  border-radius: 10px;
+}
 .col-md-3.mb-4.item {
   position: relative;
 }
@@ -175,7 +180,6 @@ span.badge.btn {
   top: 26px;
   left: 16px;
   transition: all 6s ease-in-out;
-  /* display: none; */
   background-color: #f28e03 !important;
 }
 .item:hover span.badge.bg-danger.btn {
@@ -207,17 +211,14 @@ i.fa-solid.fa-magnifying-glass.btn-2 {
 /* chair section */
 
 /*shope categari */
-.categories-image {
-  width: 150px;
-  height: 150px;
-}
 button.prev.rounded-circle {
   position: absolute;
-  top: 62px;
+  top: 60px;
   width: 35px;
   height: 35px;
-  left: 0px;
+  left: -8px;
   z-index: 11;
+  font-size: 22px;
   background-color: #ffffff;
   color: #000;
   border: none;
@@ -226,10 +227,11 @@ button.prev.rounded-circle {
 }
 button.next.rounded-circle {
   position: absolute;
-  top: 62px;
-  right: 4px;
+  top: 60px;
+  right: -8px;
   width: 35px;
   height: 35px;
+  font-size: 22px;
   z-index: 11;
   background-color: #ffffff;
   color: #000;
@@ -321,270 +323,170 @@ button.next.rounded-circle:hover {
 .inner-item-name {
   text-align: left;
 }
-
 /* service section  */
 
 /* shope section */
-.main {
-  position: relative;
-  left: 8px;
-  /* top: -375px; */
-  bottom: 390px;
+.m1 {
+  width: 100%;
+  display: block;
 }
-.main .h5 {
-  order: 1;
-  justify-content: flex-start;
-  font-size: 24px;
+
+.outer-main {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  /* justify-content: space-between; */
+}
+
+.room-4 {
+  position: relative;
+  margin: 5px;
+  border-radius: 19px;
+  width: 24%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.room-4:hover {
+  /* transform: translateY(-10px); */
+  border-radius: 19px;
+}
+
+.item-inner-4 {
+  overflow: hidden;
+  /* border-radius: 10px 10px 0 0; */
+  border-radius: 19px;
+}
+
+.item-inner-4 img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 19px;
+}
+
+.item-inner-4 img:hover {
+  transform: scale(1.1);
+  border-radius: 19px;
+}
+
+.txt-1 {
+  text-align: center;
+  /* padding: 10px; */
+}
+
+.txt-1 .h-1 {
+  font-size: 21px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 14px;
+  left: 11px;
+}
+
+.txt-1 .b-1 {
+  font-size: 17px;
   line-height: 28px;
   text-align: left;
-  padding: 0px 0px 10px 0px;
-  margin: 0% 38% 0% 0%;
+  position: absolute;
+  top: 54px;
 }
-/* btn start */
+
 a.btn.btn-warning.btn-4 {
   background-color: #9f6e48;
   color: #fff;
   border: 8px solid white;
   position: absolute;
-  right: -8px;
-  bottom: 116px;
+  right: -4px;
+  bottom: -12px;
 }
+
 a.btn.btn-warning.btn-4:hover {
   color: black;
 }
-a.btn.btn-danger.btn-4::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  top: -34px;
-  left: 4px;
-}
-a.btn.btn-danger.btn-4::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  background-repeat: no-repeat;
-  right: -32px;
-  color: #f28e03;
-  bottom: 1px;
-}
-/* btn end */
 
-/* btn start */
 a.btn.btn-warning.btn-5 {
   background-color: gray;
   color: #fff;
   border: 8px solid white;
   position: absolute;
-  bottom: 116px;
-  right: -8px;
+  bottom: -12px;
+  right: -4px;
 }
+
 a.btn.btn-warning.btn-5:hover {
   color: black;
 }
-a.btn.btn-danger.btn-5::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  top: -34px;
-  left: 4px;
-}
-a.btn.btn-danger.btn-5::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  background-repeat: no-repeat;
-  right: -32px;
-  color: #f28e03;
-  bottom: 1px;
-}
-/* btn end */
 
-/* btn start */
 a.btn.btn-warning.btn-6 {
   background-color: #384d50;
   color: #fff;
   border: 8px solid white;
   position: absolute;
-  bottom: 116px;
-  right: -8px;
+  bottom: -12px;
+  right: -4px;
 }
+
 a.btn.btn-warning.btn-6:hover {
   color: black;
 }
-a.btn.btn-danger.btn-6::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  top: -34px;
-  left: 4px;
-}
-a.btn.btn-danger.btn-6::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  background-repeat: no-repeat;
-  right: -32px;
-  color: #f28e03;
-  bottom: 1px;
-}
-/* btn end */
 
-/* btn start */
 a.btn.btn-warning.btn-7 {
   background-color: #645f4d;
   color: #fff;
   border: 8px solid white;
   position: absolute;
-  bottom: 116px;
-  right: -8px;
+  bottom: -12px;
+  right: -4px;
 }
+
 a.btn.btn-warning.btn-7:hover {
   color: black;
 }
-a.btn.btn-danger.btn-7::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  top: -34px;
-  left: 4px;
+
+@media (max-width: 1024px) {
+  .room-4 {
+    width: 45%; /* Adjust width for medium screens */
+  }
 }
-a.btn.btn-danger.btn-7::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../image/home_v4_img/download.svg");
-  background-repeat: no-repeat;
-  right: -32px;
-  color: #f28e03;
-  bottom: 1px;
+
+@media (max-width: 768px) {
+  .room-4 {
+    width: 100%; /* Adjust width for smaller screens */
+  }
 }
-/* btn end */
-.title {
-  /* align-items: center; */
-  /* justify-content: center; */
-  text-align: center;
-}
+
 /* shope section */
 
-
-/* all section start */
-/* .owl-carousel .item {
+/* sofa + chair section  */
+h2 {
+  font-size: 43px;
   text-align: center;
-  padding: 10px;
 }
+/* sofa + chair section */
 
-.owl-carousel .inner-item {
-  overflow: hidden;
-} */
-button#loopPrev {
-  /* left: -25px; */
-  position: relative;
-  bottom: 25px;
-  right: 40px;
-  font-size: 24px;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  background-color:white;
-}
-button#loopPrev:hover,
-button#loopNext:hover{
-  background-color: orange;
 
-}
-button#loopNext {
-  position: absolute;
-  position: relative;
-  bottom: 17px;
-  /* left: -1%; */
-  right: 4px;
-  border: 1px solid transparent;
-  background-color: #fefcfc;
-  border-radius: 30px;
-  font-size: 24px;
-}
-
-/* all section end */
+/* company name */
 .carousel-container {
   position: relative;
   padding: 20px;
 }
-
 .title {
   text-align: center;
   margin-bottom: 20px;
 }
-
-.red_title {
-  color:gray; 
-  font-size: 24px;
-}
-
 .blue_sub_title {
   color: black; 
   font-size: 48px;
 }
-
-.small_gray_text {
-  color: gray;
-  font-size: 24px;
-}
-
 .loop .item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .loop img {
   max-width: 100%;
-  height: auto; /* Responsive images */
+  height: auto; 
 }
-
-.nav-buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.nav-buttons button {
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav-buttons button:hover {
-  background-color: orange;
-  color: white;
-}
-
-@media (max-width: 600px) {
-  .nav-buttons button {
-      padding: 8px; /* Smaller buttons on small screens */
-  }
-}
+/* company name */
 
 
 /* email */
@@ -598,19 +500,16 @@ h5.t2 {
   padding: 13px;
 }
 .button {
-  /* align-items: center; */
   text-align: center;
   padding: 13px;
 }
 input.mail {
   width: 53%;
-  /* margin: 11px; */
   padding: 16px 26px 17px 10px;
   border-radius: 34px;
   border: 1px solid transparent;
   background-color: #eaeaea;
 }
-
 button.search {
   border-radius: 18px;
   padding: 1px;
@@ -629,18 +528,15 @@ button.search:hover{
     padding: 14px 22px;
     width: 100%;
   }
-
   button.search {
     font-size: 18px; 
     padding: 8px 16px; 
   }
 }
-
 @media (max-width: 576px) {
   input.mail {
     padding: 12px 20px;
   }
-
   button.search {
     font-size: 16px;
     padding: 6px 12px; 

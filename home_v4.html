@@ -10,10 +10,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Assets/css/home_v4.css">
-    <!-- <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -30,12 +27,15 @@
 
 
     <!-- bootstarp -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
@@ -260,9 +260,9 @@
     <!-- slider img -->
 
     <!-- sofa section -->
-    <div class="container">
+    <div class="container mt-4">
         <div class="row mt-4  ">
-            <div class="col-md-6  border-border-0">
+            <div class="col-md-6 mt-5 border-border-0">
                 <div class=" bg-light mb-3  photo-1">
                     <div class="card-images rounded">
                         <img src="Assets/image/home_v4_img/sofa-1.jpg" class="img-fluid rounded" alt="sofa 1"
@@ -352,7 +352,7 @@
     <div class="container">
         <h2 class="text-center pt-4 pb-5">Shop by Categories</h2>
         <div class="categories position-relative item-1">
-            <div class="owl-carousel ">
+            <div class="owl-carousel">
                 <div class="item text-center item-inner-1">
                     <div class="hover-img"> <img src="Assets/image/home_v3_img/p1.jpg" alt="Espresso Makers"
                             class="categories-image"></div>
@@ -409,7 +409,7 @@
                     <h5>Espresso Makers</h5>
                 </div>
             </div>
-            <div class="custom-nav">
+            <div class="Custom">
                 <button class="prev rounded-circle"><i class="bi bi-arrow-left "></i></button>
                 <button class="next rounded-circle"><i class="bi bi-arrow-right "></i></button>
             </div>
@@ -424,9 +424,9 @@
         $(document).ready(function () {
             var owl = $(".owl-carousel").owlCarousel({
                 items: 8,
-                loop: false,
+                loop: true,
                 margin: 10,
-                autoplay: false,
+                autoplay: true,
                 responsive: {
                     0: {
                         items: 1
@@ -553,6 +553,7 @@
 
     <!-- chair section -->
 
+
     <!-- services section -->
     <div class="container">
         <div class="row text-center pt-5">
@@ -590,26 +591,200 @@
     <!-- service section -->
 
     <!-- shope section -->
-    
+    <div class="container">
+        <div class="m1">
+            <div class="outer-main">
+                <div class="room-4">
+                    <div class="item-inner-4">
+                        <img src="Assets/image/home_v3_img/banner 1.jpg" alt="banner" class="img">
+                    </div>
+                    <div class="txt-1">
+                        <div class="h-1">Accent Chair by Jake Arnold</div>
+                        <div class="b-1">Escape into the cushioned contours of our Muirfeld accent chair.</div>
+                        <a href="#" class=" btn btn-warning btn-4  rounded-pill">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="room-4">
+                    <div class="item-inner-4">
+                        <img src="Assets/image/home_v3_img/banner 2.jpg" alt="banner">
+                    </div>
+                    <div class="txt-1">
+                        <div class="h-1">Ana Navy Dining Chair</div>
+                        <div class="b-1">Ana's cutaway curves and generously cushioned seat gives you room to relax.
+                        </div>
+                        <a href="#" class=" btn btn-warning btn-5  rounded-pill">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="room-4">
+                    <div class="item-inner-4">
+                        <img src="Assets/image/home_v3_img/banner 3.jpg" alt="banner">
+                    </div>
+                    <div class="txt-1">
+                        <div class="h-1">Canyon Queen Arched Canopy</div>
+                        <div class="b-1">Escape into the cushioned contours of our Muirfeld accent chair.</div>
+                        <a href="#" class=" btn btn-warning btn-6  rounded-pill">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="room-4">
+                    <div class="item-inner-4">
+                        <img src="Assets/image/home_v3_img/banner 4.jpg" alt="banner">
+                    </div>
+                    <div class="txt-1">
+                        <div class="h-1">Tate Stone Grey Wood</div>
+                        <div class="b-1">Our popular Tate collection brings its cool, 1960s vibe into the office
+                        </div>
+                        <a href="#" class=" btn btn-warning btn-7  rounded-pill">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- shope section -->
+
+
+
+
+    <!-- sofa + chair section -->
+    <div class="container mt-5">
+        <h2><span>We Think You'll Love</span></h2>
+        <div class="owl-carousel owl-theme product-carousel mt-4">
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair005.jpeg" class="card-img-top rounded"
+                        alt="Lounge Deep Chaise Lounge" style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Lounge Deep Chaise Lounge</h5>
+                    <p class="card-text btn-2">$299.99</p>
+                </div>
+            </div>
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair006.jpeg" class="card-img-top rounded"
+                        alt="Polly Sand Brown Accent Chair" style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-sm-start">Polly Sand Brown Accent Chair</h5>
+                    <p class="card-text">$439.99</p>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart btn-1"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass btn-2"></i></a>
+            </div>
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair007.jpeg" class="card-img-top rounded"
+                        alt="Muirfield Sculptural Metal Accent Chair" style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Muirfield Sculptural Metal Accent Chair</h5>
+                    <p class="card-text">$299.99</p>
+                </div>
+                <span class="badge bg-danger btn">SALE!</span>
+                <a href="#"><i class="fa-regular fa-heart btn-1"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass btn-2"></i></a>
+            </div>
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair008.jpeg" class="card-img-top rounded" alt="Gather Sofa"
+                        style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gather chair</h5>
+                    <p class="card-text"><span class="text-decoration-line-through">$339.99</span> $139.99</p>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart btn-1"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass btn-2"></i></a>
+            </div>
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair003.jpeg" class="card-img-top rounded"
+                        alt="Muirfield Sculptural Metal Accent Chair" style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Muirfield Sculptural Metal Accent Chair</h5>
+                    <p class="card-text">$299.99</p>
+                </div>
+                <span class="badge bg-danger btn">SALE!</span>
+                <a href="#"><i class="fa-regular fa-heart btn-1"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass btn-2"></i></a>
+            </div>
+
+            <div class="item-2">
+                <div class="inner-item">
+                    <img src="Assets/image/home_v4_img/chair004.jpeg" class="card-img-top rounded" alt="Gather Sofa"
+                        style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gather chair</h5>
+                    <p class="card-text"><span class="text-decoration-line-through">$339.99</span> $139.99</p>
+                </div>
+                <span class="badge bg-danger btn">SALE!</span>
+                <a href="#"><i class="fa-regular fa-heart btn-1"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass btn-2"></i></a>
+            </div>
+
+        </div>
+        <!-- <div class="Custom-1">
+            <button class="prev-1 rounded-circle"><i class="bi bi-arrow-left "></i></button>
+            <button class="next-1 rounded-circle"><i class="bi bi-arrow-right "></i></button>
+        </div> -->
+    </div>
+
+    <script>
+        $('.product-carousel').owlCarousel({
+            loop: true,
+            margin: 8,
+
+            nav: false,
+            dots: false,
+            autoplay: true,
+            // scroll:0.9s,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
+    <!-- sofa + chair section -->
+
+
+
+    <!-- compny name -->
+
     <div class="container">
         <div class="title">
-            <p class="red_title">Our Affordable</p>
-            <h2 class="blue_sub_title">Health Checkup</h2>
-            <p class="small_gray_text text-center">Plans For Your Good Health</p>
+            <!-- <p class="red_title">Our Affordable</p> -->
+            <h5 class="blue_sub_title pt-4 pb-5">Explore our Exclusive Brands</h5>
+            <!-- <p class="small_gray_text text-center">Plans For Your Good Health</p> -->
         </div>
         <div class="carousel-container">
             <div class="container">
                 <div class="loop owl-carousel">
-                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo1.png" alt="" style="width: 270px; margin-right: 1px;"></div>
-                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo2.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
-                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo3.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
-                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo4.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
-                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo5.png" alt=""  style="width: 270px; margin-right: 1px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo1.png" alt=""
+                            style="width: 230px; margin-right: 0px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo2.png" alt=""
+                            style="width: 230px; margin-right: 0px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo3.png" alt=""
+                            style="width: 230px; margin-right: 0px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo4.png" alt=""
+                            style="width: 230px; margin-right: 0px;"></div>
+                    <div class="item"><img src="../minituar/Assets/image/home_v4_img/logo5.png" alt=""
+                            style="width: 230px; margin-right: 0px;"></div>
                 </div>
-            </div>
-            <div class="nav-buttons">
-                <button id="loopPrev" class="rounded-circle"><i class="fas fa-arrow-left"></i></button>
-                <button id="loopNext" class="rounded-circle"><i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
@@ -619,6 +794,7 @@
             center: true,
             items: 1, // Show one item per slide by default
             loop: true,
+            autoplay: true,
             margin: 8,
             responsive: {
                 600: {
@@ -642,6 +818,11 @@
             loopCarousel.trigger('next.owl.carousel');
         });
     </script>
+    <!-- company name -->
+
+
+
+
 
     <!-- email -->
     <div class="container">
@@ -703,8 +884,10 @@
             <p>© 2023 Miniture All rights reserved. Designed by Novaworks</p>
         </div>
     </footer>
-    <!-- footer start -->
-
+    <!-- footer start
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 </body>
 
