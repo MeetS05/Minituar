@@ -158,7 +158,7 @@ a.btn.btn-warning.btn-2:hover {
 /* sofa section */
 
 /* chair section */
-.item-2:hover img.card-img-top {
+.item:hover img.card-img-top {
   transform: scale(1.1);
   transition: all 0.9s ease-in-out;
   border-radius: 10px;
